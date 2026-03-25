@@ -1,0 +1,732 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- META / SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Leapintel Solutions</title>
+    <meta
+      name="description"
+      content="Learn more about the executive leadership perspective behind Leapintel Solutions, including interim CIO, fractional executive, and strategic advisory experience."
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <meta property="og:title" content="About | Leapintel Solutions" />
+    <meta
+      property="og:description"
+      content="Executive leadership grounded in transformation, delivery, and trusted strategic guidance."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leapintel.com/about" />
+    <meta property="og:image" content="https://leapintel.com/chicago-skyline.jpg" />
+
+    <style>
+      /* =================================
+         ROOT VARIABLES
+         ================================= */
+      :root {
+        --navy: #142033;
+        --white: #ffffff;
+        --max-width: 1200px;
+      }
+
+      /* =================================
+         BASE / RESET
+         ================================= */
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #1f2937;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      /* =================================
+         SHARED SECTION STYLES
+         ================================= */
+      .section-container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      h2 {
+        margin: 0 0 22px;
+        color: #172132;
+        font-size: clamp(2rem, 3vw, 2.6rem);
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+
+      .section-intro {
+        max-width: 52ch;
+        margin-bottom: 44px;
+        color: #4b5563;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      /* =================================
+         HEADER / NAVIGATION
+         ================================= */
+      .site-header {
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        background: #dbe3ec;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.08);
+      }
+
+      .nav-shell {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 22px 24px;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        white-space: nowrap;
+        color: #172132;
+        font-size: 1.18rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        color: #4b5563;
+        font-size: 0.92rem;
+        font-weight: 500;
+      }
+
+      .nav-links a {
+        transition: color 0.2s ease, opacity 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #172132;
+        opacity: 1;
+      }
+
+      /* =================================
+         BUTTONS
+         ================================= */
+      .button-primary,
+      .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        padding: 0 20px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+        box-sizing: border-box;
+        appearance: none;
+        -webkit-appearance: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease,
+          color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .button-primary {
+        color: #172132;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.95);
+        box-shadow: none;
+      }
+
+      .button-primary:hover {
+        transform: translateY(-1px);
+        background: #faf6f6;
+      }
+
+      .button-secondary {
+        color: rgba(255, 255, 255, 0.98);
+        background: rgba(10, 20, 35, 0.34);
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        box-shadow: none;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .button-secondary:hover {
+        background: rgba(10, 20, 35, 0.44);
+        border-color: rgba(255, 255, 255, 0.42);
+      }
+
+      /* =================================
+         ABOUT PAGE HEADER
+         ================================= */
+      .about-header {
+        padding: 80px 0;
+        background: linear-gradient(180deg, #eef2f7 0%, #f7f9fc 100%);
+        border-bottom: 1px solid rgba(23, 33, 50, 0.06);
+      }
+
+      .about-header-inner {
+        max-width: 860px;
+      }
+
+      .about-eyebrow {
+        margin: 0 0 14px;
+        color: #5b6777;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .about-title {
+        margin: 0 0 22px;
+        color: #172132;
+        font-size: clamp(2.4rem, 4vw, 3.8rem);
+        font-weight: 500;
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        max-width: 18ch;
+        transform: translateX(-2px);
+      }
+
+      .about-lead {
+        max-width: 58ch;
+        margin: 0;
+        color: #4b5563;
+        font-size: 1.18rem;
+        line-height: 1.72;
+      }
+
+      /* =================================
+         EXECUTIVE NARRATIVE
+         ================================= */
+      .about-narrative {
+        padding: 90px 0 95px;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(255, 255, 255, 0.92) 100%
+          ),
+          url('/about-arch.jpg') center center / cover no-repeat;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+      }
+
+      .about-narrative-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+        gap: 40px 64px;
+        align-items: start;
+      }
+
+      .about-narrative-intro h2 {
+        margin-bottom: 0;
+      }
+
+      .about-narrative-content {
+        max-width: 62ch;
+      }
+
+      .about-narrative-content p {
+        margin: 0 0 22px;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .about-narrative-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* =================================
+         LEADERSHIP PHILOSOPHY
+         ================================= */
+      .about-principles {
+        padding: 95px 0 100px;
+        background: #f6f8fb;
+      }
+
+      .about-principles-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+
+      .principle-card {
+        padding: 28px 24px;
+        background: #ffffff;
+        border: 1px solid rgba(23, 33, 50, 0.07);
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(23, 33, 50, 0.035);
+      }
+
+      .principle-card h3 {
+        margin: 0 0 12px;
+        color: #172132;
+        font-size: 1.04rem;
+        font-weight: 600;
+      }
+
+      .principle-card p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 0.96rem;
+        line-height: 1.72;
+      }
+
+      /* =================================
+         THE LEAPINTEL MODEL
+         ================================= */
+      .about-platform {
+        padding: 85px 0 90px;
+        background: #ffffff;
+        border-top: 1px solid rgba(23, 33, 50, 0.05);
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+      }
+
+      .about-platform-inner {
+        max-width: 760px;
+      }
+
+      .about-platform-copy p {
+        margin: 0 0 18px;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .about-platform-copy p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* =================================
+         CTA SECTION
+         ================================= */
+      .cta {
+        padding: 100px 0 110px;
+        background: var(--navy);
+        text-align: center;
+      }
+
+      .cta h2 {
+        margin: 0 0 20px;
+        color: #ffffff;
+      }
+
+      .cta .section-intro {
+        max-width: 56ch;
+        margin: 0 auto 36px;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .cta-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      /* =================================
+         FOOTER
+         ================================= */
+      .site-footer {
+        padding: 60px 24px 30px;
+        color: #1f2937;
+        background: #ffffff;
+        border-top: 1px solid rgba(23, 33, 50, 0.08);
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        align-items: flex-start;
+        gap: 28px;
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      .footer-logo {
+        width: 130px;
+        margin-bottom: 12px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .footer-links a {
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .footer-links a:hover {
+        color: #111827;
+      }
+
+      .footer-contact p {
+        margin: 0 0 8px;
+        color: #6b7280;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .footer-contact a {
+        color: #374151;
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom {
+        margin-top: 40px;
+        color: #6b7280;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      /* =================================
+         RESPONSIVE BREAKPOINTS
+         ================================= */
+      @media (max-width: 900px) {
+        .nav-links {
+          gap: 18px;
+          font-size: 0.9rem;
+        }
+
+        .footer-container {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .about-narrative-grid,
+        .about-principles-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-header {
+          padding: 140px 0 70px;
+        }
+
+        .about-title {
+          max-width: 16ch;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .nav-bar {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 14px;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          gap: 12px 16px;
+          font-size: 0.78rem;
+          line-height: 1.2;
+        }
+
+        .button-primary,
+        .button-secondary {
+          width: 100%;
+          min-height: 46px;
+          font-size: 0.9rem;
+        }
+
+        .about-header {
+          padding: 72px 0 56px;
+        }
+
+        .about-title {
+          margin: 0 0 18px;
+          font-size: clamp(2.2rem, 8vw, 3.2rem);
+          line-height: 1.05;
+        }
+
+        .about-lead {
+          font-size: 1.05rem;
+          line-height: 1.65;
+        }
+
+        .about-narrative,
+        .about-principles,
+        .about-platform,
+        .cta {
+          padding-top: 72px;
+          padding-bottom: 76px;
+        }
+
+        .principle-card {
+          padding: 24px 20px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .nav-shell {
+          padding: 18px;
+        }
+
+        .brand {
+          font-size: 1.05rem;
+        }
+
+        .about-header-inner {
+          max-width: 100%;
+        }
+
+        .about-title {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="nav-shell">
+        <div class="nav-bar">
+          <a class="brand" href="/">Leapintel Solutions</a>
+
+          <nav class="nav-links" aria-label="Primary">
+            <a href="/about">About</a>
+            <a href="/engagement">Engagement Models</a>
+            <a href="/capabilities">Capabilities</a>
+            <a href="/experience">Experience</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT PAGE HEADER -->
+      <section class="about-header">
+        <div class="section-container">
+          <div class="about-header-inner">
+            <p class="about-eyebrow">About</p>
+            <h1 class="about-title">
+              Executive Leadership Grounded in Transformation, Delivery, and Trust
+            </h1>
+            <p class="about-lead">
+              Leapintel Solutions reflects a leadership approach shaped by enterprise
+              complexity, operational accountability, and strategic technology
+              transformation across multiple sectors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXECUTIVE NARRATIVE -->
+      <section class="about-narrative">
+        <div class="section-container">
+          <div class="about-narrative-grid">
+            <div class="about-narrative-intro">
+              <h2>A perspective shaped by enterprise complexity and transformation</h2>
+            </div>
+
+            <div class="about-narrative-content">
+              <p>
+                Leapintel Solutions reflects an executive perspective developed through
+                leading enterprise modernization, operational improvement, and strategic
+                technology initiatives across government, healthcare, aviation, and
+                consulting environments.
+              </p>
+
+              <p>
+                That perspective has been shaped in organizations where technology must
+                do more than function well. It must support mission priorities, improve
+                organizational performance, strengthen service delivery, and help
+                leadership teams navigate change with clarity and confidence.
+              </p>
+
+              <p>
+                Across these environments, leadership has focused on guiding complex
+                transformation efforts, shaping enterprise application and
+                infrastructure strategies, and aligning execution across business and
+                technology boundaries.
+              </p>
+
+              <p>
+                Leapintel Solutions serves as the platform for interim CIO, fractional
+                executive, and strategic advisory engagements where experienced
+                leadership, calm execution, and trusted perspective are needed most.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEADERSHIP PHILOSOPHY -->
+      <section class="about-principles">
+        <div class="section-container">
+          <h2>Leadership Philosophy</h2>
+          <p class="section-intro">
+            Effective technology leadership requires strategic alignment,
+            operational discipline, and the ability to guide organizations through
+            complexity without creating unnecessary noise.
+          </p>
+
+          <div class="about-principles-grid">
+            <div class="principle-card">
+              <h3>Business-Aligned Technology Leadership</h3>
+              <p>
+                Technology strategy should serve organizational priorities, not
+                operate as a separate agenda. The strongest outcomes come when
+                technology decisions are grounded in mission, service, and business
+                value.
+              </p>
+            </div>
+
+            <div class="principle-card">
+              <h3>Calm Execution in Complex Environments</h3>
+              <p>
+                Periods of change demand steady leadership. Complex initiatives move
+                forward more effectively when they are approached with clarity,
+                discipline, and a practical understanding of organizational realities.
+              </p>
+            </div>
+
+            <div class="principle-card">
+              <h3>Modernization with Operational Discipline</h3>
+              <p>
+                Transformation is most successful when ambition is matched with sound
+                execution, governance, and operational follow-through.
+              </p>
+            </div>
+
+            <div class="principle-card">
+              <h3>Partnership Across Business and Technology</h3>
+              <p>
+                Sustainable progress depends on trust across executive leadership,
+                operational stakeholders, and technical teams. Alignment is not
+                incidental; it must be built intentionally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE LEAPINTEL MODEL -->
+      <section class="about-platform">
+        <div class="section-container">
+          <div class="about-platform-inner">
+            <h2>The Leapintel Model</h2>
+
+            <div class="about-platform-copy">
+              <p>
+                Leapintel Solutions is structured as a focused executive leadership
+                platform rather than a traditional consulting firm or a permanent
+                organizational role.
+              </p>
+
+              <p>
+                It is designed for organizations navigating transition,
+                modernization, or moments where experienced judgment is required
+                without unnecessary complexity or structural overhead.
+              </p>
+
+              <p>
+                The model emphasizes direct engagement, practical execution, and
+                clear accountability—bringing senior-level perspective to situations
+                where clarity and momentum matter most.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT PAGE CTA -->
+      <section class="cta">
+        <div class="section-container">
+          <h2>Start a Conversation</h2>
+          <p class="section-intro">
+            For organizations navigating transition, modernization, or complex
+            technology decisions, experienced executive perspective can provide
+            both clarity and momentum.
+          </p>
+
+          <div class="cta-actions">
+            <a class="button-primary" href="mailto:info@leapintel.com">
+              Contact via Email
+            </a>
+            <a class="button-secondary" href="/contact">
+              Visit Contact Page
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SITE FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <img src="/logo.png" alt="Leapintel Solutions" class="footer-logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/engagement">Engagement Models</a>
+            <a href="/capabilities">Capabilities</a>
+            <a href="/experience">Experience</a>
+            <a href="/contact">Contact</a>
+          </div>
+
+          <div class="footer-contact">
+            <p>Contact</p>
+            <a href="mailto:info@leapintel.com">info@leapintel.com</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2019–2026 Leapintel Solutions. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
