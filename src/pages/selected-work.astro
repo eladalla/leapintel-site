@@ -6,37 +6,32 @@
   <head>
     <!-- META / SEO -->
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience | Leapintel Solutions</title>
+    <title>Selected Work | Leapintel Solutions</title>
     <meta
       name="description"
-      content="This section of the Leapintel Solutions website is currently being updated and will be available shortly. For inquiries, contact info@leapintel.com."
+      content="Representative examples of how complex technology leadership challenges have been addressed across public sector, healthcare, and enterprise environments."
     />
-    <meta property="og:title" content="Experience | Leapintel Solutions" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <meta property="og:title" content="Selected Work | Leapintel Solutions" />
     <meta
       property="og:description"
-      content="This section is currently being updated and will be available shortly."
+      content="How leadership, structure, and execution have been brought into alignment across complex environments."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://leapintel.com/capabilities" />
-    <meta property="og:image" content="https://leapintel.com/leapintel-logo.png" />
+    <meta property="og:url" content="https://leapintel.com/selected-work" />
+    <meta property="og:image" content="https://leapintel.com/chicago-skyline.jpg" />
 
     <style>
       /* =================================
          ROOT VARIABLES
          ================================= */
       :root {
-        --blue: #1c2faa;
-        --light-blue: #6fa8dc;
-        --gold: #f4b000;
-        --orange: #f28c18;
-        --text: #1f2937;
-        --muted: #5b6472;
+        --navy: #142033;
         --white: #ffffff;
-        --border: rgba(255, 255, 255, 0.35);
-        --shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
-        --max-width: 960px;
+        --max-width: 1200px;
       }
 
       /* =================================
@@ -50,18 +45,13 @@
       body {
         margin: 0;
         padding: 0;
-        min-height: 100%;
         font-family: Arial, Helvetica, sans-serif;
-        color: var(--text);
+        background: #ffffff;
+        color: #1f2937;
       }
 
       body {
         min-height: 100vh;
-        padding: 22px 16px;
-        background:
-          radial-gradient(circle at top left, rgba(111, 168, 220, 0.35), transparent 35%),
-          radial-gradient(circle at bottom right, rgba(242, 140, 24, 0.22), transparent 30%),
-          linear-gradient(135deg, #f8fbff 0%, #eef4fb 45%, #fdf8f2 100%);
       }
 
       a {
@@ -69,24 +59,34 @@
         text-decoration: none;
       }
 
-      /* =================================
-         PAGE WRAPPER
-         ================================= */
-      .shell {
-        width: 100%;
-        max-width: var(--max-width);
-        margin: 0 auto;
+      img {
+        display: block;
+        max-width: 100%;
       }
 
-      .card {
-        position: relative;
-        overflow: hidden;
-        background: rgba(255, 255, 255, 0.78);
-        border: 1px solid var(--border);
-        border-radius: 28px;
-        box-shadow: var(--shadow);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+      /* =================================
+         SHARED SECTION STYLES
+         ================================= */
+      .section-container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      h2 {
+        margin: 0 0 22px;
+        color: #172132;
+        font-size: clamp(2rem, 3vw, 2.6rem);
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+
+      .section-intro {
+        max-width: 54ch;
+        margin-bottom: 44px;
+        color: #4b5563;
+        font-size: 1.05rem;
+        line-height: 1.7;
       }
 
       /* =================================
@@ -96,7 +96,7 @@
         position: relative;
         z-index: 20;
         width: 100%;
-        background: rgba(219, 227, 236, 0.72);
+        background: #dbe3ec;
         border-bottom: 1px solid rgba(23, 33, 50, 0.08);
       }
 
@@ -164,107 +164,383 @@
       }
 
       /* =================================
-         PLACEHOLDER CONTENT
+         BUTTONS
          ================================= */
-      .background-logo {
-        position: absolute;
-        top: 82px;
-        left: 50%;
-        width: 620px;
-        max-width: none;
-        opacity: 0.08;
-        transform: translateX(-50%);
-        pointer-events: none;
-      }
-
-      .content {
-        padding: 56px 32px;
-        text-align: center;
-      }
-
-      .eyebrow {
-        display: inline-block;
-        margin-bottom: 16px;
-        padding: 8px 14px;
+      .button-primary,
+      .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        padding: 0 20px;
         border-radius: 999px;
-        background: rgba(28, 47, 170, 0.08);
-        color: var(--blue);
-        font-size: 0.88rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0 0 16px;
-        color: var(--text);
-        font-size: clamp(2rem, 4vw, 3.25rem);
-        line-height: 1.1;
-      }
-
-      .subhead {
-        max-width: 720px;
-        margin: 0 auto 18px;
-        color: var(--muted);
-        font-size: clamp(1.05rem, 2vw, 1.22rem);
-        line-height: 1.65;
-      }
-
-      .contact-box {
-        max-width: 680px;
-        margin: 32px auto 0;
-        padding: 18px 20px;
-        background: rgba(255, 255, 255, 0.82);
-        border: 1px solid rgba(28, 47, 170, 0.08);
-        border-radius: 18px;
-      }
-
-      .contact-label {
-        margin: 0 0 8px;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-
-      .contact-email {
-        display: inline-block;
-        color: var(--blue);
-        font-size: 1.05rem;
-        font-weight: 700;
-      }
-
-      .contact-email:hover {
-        text-decoration: underline;
-      }
-
-      .brand-accent {
-        width: 100%;
-        height: 3px;
-        margin: 100px auto 5px auto;
-        background: linear-gradient(
-          90deg,
-          #1c2faa,
-          #6fa8dc,
-          #f4b000,
-          #f28c18
-        );
-      }
-
-      .footer-note {
-        margin-top: 22px;
-        color: #6b7280;
         font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+        box-sizing: border-box;
+        appearance: none;
+        -webkit-appearance: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease,
+          color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .button-primary {
+        color: #172132;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.95);
+        box-shadow: none;
+      }
+
+      .button-primary:hover {
+        transform: translateY(-1px);
+        background: #faf6f6;
+      }
+
+      .button-secondary {
+        color: rgba(255, 255, 255, 0.98);
+        background: rgba(10, 20, 35, 0.34);
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        box-shadow: none;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .button-secondary:hover {
+        background: rgba(10, 20, 35, 0.44);
+        border-color: rgba(255, 255, 255, 0.42);
       }
 
       /* =================================
-         RESPONSIVE
+         SELECTED WORK PAGE HEADER
          ================================= */
-      @media (max-width: 720px) {
-        body {
-          padding: 16px 12px;
+      .selected-header {
+        padding: 80px 0;
+        background: linear-gradient(180deg, #eef2f7 0%, #f7f9fc 100%);
+        border-bottom: 1px solid rgba(23, 33, 50, 0.06);
+      }
+
+      .selected-header-inner {
+        max-width: 940px;
+      }
+
+      .selected-eyebrow {
+        margin: 0 0 14px;
+        color: #5b6777;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .selected-title {
+        margin: 0 0 22px;
+        color: #172132;
+        font-size: clamp(2.4rem, 4vw, 3.8rem);
+        font-weight: 500;
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        max-width: 20ch;
+        transform: translateX(-2px);
+      }
+
+      .selected-lead {
+        max-width: 60ch;
+        margin: 0;
+        color: #4b5563;
+        font-size: 1.18rem;
+        line-height: 1.72;
+      }
+
+      .selected-hero-support {
+        max-width: 62ch;
+        margin: 28px 0 0;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      /* =================================
+         SELECTED WORK SECTIONS
+         ================================= */
+      .selected-work {
+        padding: 90px 0 95px;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+      }
+
+      .selected-work-alt {
+        background: #f6f8fb;
+      }
+
+      .selected-work-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.28fr);
+        gap: 40px 64px;
+        align-items: start;
+      }
+
+      /* LEFT COLUMN */
+      .selected-work-left h2 {
+        margin-bottom: 16px;
+        max-width: 20ch;
+      }
+
+      .selected-descriptor {
+        margin: 0 0 22px;
+        color: #5b6777;
+        font-size: 0.95rem;
+        font-weight: 600;
+        line-height: 1.65;
+        letter-spacing: 0.01em;
+      }
+
+      .selected-bullet-intro {
+        margin: 0 0 16px;
+        color: #172132;
+        font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+      }
+
+      .selected-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .selected-list li {
+        position: relative;
+        margin: 0 0 12px;
+        padding-left: 18px;
+        color: #4b5563;
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+
+      .selected-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      .selected-list li::before {
+        content: "";
+        position: absolute;
+        top: 0.72em;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: rgba(23, 33, 50, 0.34);
+        transform: translateY(-50%);
+      }
+
+      /* RIGHT COLUMN */
+      .selected-work-right {
+        max-width: 62ch;
+        padding-top: 98px;
+      }
+
+      .selected-copy-block {
+        margin-bottom: 28px;
+      }
+
+      .selected-copy-block:last-child {
+        margin-bottom: 0;
+      }
+
+      .selected-copy-label {
+        margin: 0 0 10px;
+        color: #172132;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .selected-copy-block p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      /* =================================
+         CROSS-ENVIRONMENT THEMES
+         ================================= */
+      .selected-themes {
+        padding: 95px 0 100px;
+        background: #f6f8fb;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+        
+      }
+
+      .selected-themes-intro {
+        max-width: 108ch;
+      }
+
+      .selected-themes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+
+      .theme-card {
+        padding: 28px 24px;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(23, 33, 50, 0.035);
+      }
+
+      .theme-card h3 {
+        margin: 0 0 12px;
+        color: #172132;
+        font-size: 1.04rem;
+        font-weight: 600;
+      }
+
+      .theme-card p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 0.96rem;
+        line-height: 1.72;
+      }
+
+      /* =================================
+         SELECTED WORK CTA
+         ================================= */
+      .selected-cta {
+        padding: 100px 0 110px;
+        background: var(--navy);
+        text-align: center;
+      }
+
+      .selected-cta-inner {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .selected-cta h2 {
+        margin: 0 0 20px;
+        color: #ffffff;
+      }
+
+      .selected-cta p {
+        max-width: 56ch;
+        margin: 0 auto 36px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      /* =================================
+         FOOTER
+         ================================= */
+      .site-footer {
+        padding: 60px 24px 30px;
+        color: #1f2937;
+        background: #ffffff;
+        border-top: 1px solid rgba(23, 33, 50, 0.08);
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        align-items: flex-start;
+        gap: 28px;
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      .footer-logo {
+        width: 130px;
+        margin-bottom: 12px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .footer-links a {
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .footer-links a:hover {
+        color: #111827;
+      }
+
+      .footer-contact p {
+        margin: 0 0 8px;
+        color: #6b7280;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .footer-contact a {
+        color: #374151;
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom {
+        margin-top: 40px;
+        color: #6b7280;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      /* =================================
+         RESPONSIVE BREAKPOINTS
+         ================================= */
+      @media (max-width: 900px) {
+        .nav-links {
+          gap: 18px;
+          font-size: 0.9rem;
         }
 
+        .footer-container {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .selected-work-grid,
+        .selected-themes-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .selected-header {
+          padding: 140px 0 70px;
+        }
+
+        .selected-title {
+          max-width: 16ch;
+        }
+
+        .selected-work-right {
+          padding-top: 0;
+        }
+      }
+
+      @media (max-width: 720px) {
         .nav-shell {
-          padding: 18px 18px;
+          padding: 18px;
         }
 
         .nav-bar {
@@ -311,18 +587,42 @@
           background: rgba(219, 227, 236, 0.45);
         }
 
-        .content {
-          padding: 40px 20px;
+        .button-primary,
+        .button-secondary {
+          width: 100%;
+          min-height: 46px;
+          font-size: 0.9rem;
         }
 
-        .background-logo {
-          top: 110px;
-          width: 360px;
-          opacity: 0.08;
+        .selected-header {
+          padding: 72px 0 56px;
         }
 
-        .contact-box {
-          padding: 16px;
+        .selected-title {
+          margin: 0 0 18px;
+          font-size: clamp(2.2rem, 8vw, 3.2rem);
+          line-height: 1.05;
+          max-width: 100%;
+        }
+
+        .selected-lead {
+          font-size: 1.05rem;
+          line-height: 1.65;
+        }
+
+        .selected-work,
+        .selected-themes,
+        .selected-cta {
+          padding-top: 72px;
+          padding-bottom: 76px;
+        }
+
+        .theme-card {
+          padding: 24px 20px;
+        }
+
+        .selected-copy-block {
+          margin-bottom: 24px;
         }
       }
 
@@ -330,68 +630,469 @@
         .brand {
           font-size: 1.02rem;
         }
+
+        .selected-header-inner {
+          max-width: 100%;
+        }
       }
     </style>
   </head>
 
   <body>
-    <main class="shell">
-      <section class="card">
-        <!-- SITE HEADER -->
-        <header class="site-header">
-          <div class="nav-shell">
-            <div class="nav-bar">
-              <a class="brand" href="/">Leapintel Solutions</a>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="nav-shell">
+        <div class="nav-bar">
+          <a class="brand" href="/">Leapintel Solutions</a>
 
-              <button
-                class="nav-toggle"
-                type="button"
-                aria-expanded="false"
-                aria-controls="primary-navigation"
-                aria-label="Open navigation"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-              <nav class="nav-links" id="primary-navigation" aria-label="Primary">
-                <a href="/about">About</a>
-                <a href="/engagement">Engagement Models</a>
-                <a href="/focus-areas">Focus Areas</a>
-                <a href="/selected-work">Selected Work</a>
-                <a href="/contact">Contact</a>
-              </nav>
-            </div>
+          <nav class="nav-links" id="primary-navigation" aria-label="Primary">
+            <a href="/about">About</a>
+            <a href="/engagement">Engagement Models</a>
+            <a href="/focus-areas">Focus Areas</a>
+            <a href="/selected-work">Selected Work</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SELECTED WORK PAGE HEADER -->
+      <section class="selected-header">
+        <div class="section-container">
+          <div class="selected-header-inner">
+            <p class="selected-eyebrow">Selected Work</p>
+
+            <h1 class="selected-title">
+              How these challenges have been addressed across complex environments and organizational contexts.
+            </h1>
+
+            <p class="selected-lead">
+              The work has spanned public sector, healthcare, enterprise modernization,
+              and large-scale transformation environments. While each context differs,
+              the underlying challenges are often consistent.
+            </p>
+
+            <p class="selected-hero-support">
+              The examples below are not presented as a comprehensive history.
+              They are representative situations that reflect how leadership,
+              structure, and execution have been brought into alignment across
+              different settings.
+            </p>
           </div>
-        </header>
-
-        <!-- PLACEHOLDER CONTENT -->
-        <img class="background-logo" src="/leapintel-logo.png" alt="" />
-
-        <div class="content">
-          <div class="eyebrow">Section Update</div>
-
-          <h1>Strategic Technology Leadership for Organizations in Transition</h1>
-
-          <p class="subhead">
-            This section is currently being updated and will be available shortly.
-          </p>
-
-          <div class="contact-box">
-            <p class="contact-label">For immediate inquiries or conversation:</p>
-            <a class="contact-email" href="mailto:info@leapintel.com">
-              info@leapintel.com
-            </a>
-          </div>
-
-          <div class="brand-accent"></div>
-
-          <p class="footer-note">
-            © 2019–2026 Leapintel Solutions. All rights reserved.
-          </p>
         </div>
       </section>
+
+      <!-- SELECTED WORK 01 -->
+      <section class="selected-work">
+        <div class="section-container">
+          <div class="selected-work-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / CONTEXT BULLETS -->
+            <div class="selected-work-left">
+              <h2>Leadership Continuity &amp; Transition</h2>
+
+              <p class="selected-descriptor">
+                Maintaining direction and decision clarity during periods of leadership change.
+              </p>
+
+              <p class="selected-bullet-intro">Representative contexts:</p>
+
+              <ul class="selected-list">
+                <li>executive departures or vacancies that create uncertainty</li>
+                <li>organizations continuing to operate without strong directional alignment</li>
+                <li>transitions where decision-making slows as authority becomes less clear</li>
+                <li>environments that need continuity before long-term leadership is established</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH / REPRESENTATIVE ENVIRONMENTS -->
+            <div class="selected-work-right">
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Context</p>
+                <p>
+                  Leadership transitions often introduce more disruption than expected.
+                  Even when operations continue, decision-making can slow, priorities can
+                  become less defined, and accountability can begin to diffuse.
+                  Organizations may keep moving, but without clear direction or consistent alignment.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Approach</p>
+                <p>
+                  Work in these situations has focused on preserving continuity while
+                  preparing the organization for its next phase of leadership.
+                  This includes maintaining decision cadence, clarifying authority,
+                  stabilizing priorities, and ensuring that initiatives continue to move
+                  forward without unnecessary disruption. Just as importantly, the goal
+                  is to leave behind structure, clarity, and forward movement rather than unresolved issues.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Representative Environments</p>
+                <p>
+                  This work has included government agencies, enterprise organizations,
+                  and settings undergoing leadership transition, restructuring, or executive change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK 02 -->
+      <section class="selected-work selected-work-alt">
+        <div class="section-container">
+          <div class="selected-work-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / CONTEXT BULLETS -->
+            <div class="selected-work-left">
+              <h2>Stabilization &amp; Execution Recovery</h2>
+
+              <p class="selected-descriptor">
+                Restoring execution clarity where delivery has slowed or fragmented.
+              </p>
+
+              <p class="selected-bullet-intro">Representative contexts:</p>
+
+              <ul class="selected-list">
+                <li>active initiatives that no longer move with coherence</li>
+                <li>too many priorities competing without real sequencing</li>
+                <li>mixed signals around status, ownership, and risk</li>
+                <li>leadership uncertainty about what is actually on track</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH / REPRESENTATIVE ENVIRONMENTS -->
+            <div class="selected-work-right">
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Context</p>
+                <p>
+                  In multiple environments, initiatives were active but lacked coherence.
+                  Teams were working, priorities were shifting, and progress was difficult
+                  to interpret. Leadership often received mixed signals about status, risk,
+                  and ownership, making it difficult to determine where intervention was needed.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Approach</p>
+                <p>
+                  Work in these situations has focused on restoring execution clarity.
+                  This includes re-establishing priorities, identifying where initiatives
+                  are truly stalled, clarifying ownership, and reducing operational noise.
+                  Governance structures are adjusted to improve decision flow, and reporting
+                  is refined to better reflect actual progress and risk. The objective is
+                  to restore confidence in execution and create a more reliable path forward.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Representative Environments</p>
+                <p>
+                  This work has included large-scale enterprise settings and public sector
+                  initiatives, including healthcare environments, state-level programs,
+                  and multi-team modernization efforts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK 03 -->
+      <section class="selected-work">
+        <div class="section-container">
+          <div class="selected-work-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / CONTEXT BULLETS -->
+            <div class="selected-work-left">
+              <h2>Modernization Without Disruption</h2>
+
+              <p class="selected-descriptor">
+                Advancing modernization while maintaining operational continuity.
+              </p>
+
+              <p class="selected-bullet-intro">Representative contexts:</p>
+
+              <ul class="selected-list">
+                <li>legacy environments that cannot be left untouched</li>
+                <li>modernization efforts that risk outrunning internal capacity</li>
+                <li>organizations balancing improvement against continuity of service</li>
+                <li>deeply embedded systems that support daily operations</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH / REPRESENTATIVE ENVIRONMENTS -->
+            <div class="selected-work-right">
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Context</p>
+                <p>
+                  Modernization efforts often introduce risk when they are pursued without
+                  sufficient alignment to operational realities. Legacy systems may need to
+                  be replaced, restructured, or integrated, but core services must continue
+                  without interruption. When modernization moves faster than organizational
+                  readiness, it can create instability rather than improvement.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Approach</p>
+                <p>
+                  Work in these situations has focused on sequencing change in a way that
+                  protects operations while still enabling progress. This includes aligning
+                  stakeholders around practical tradeoffs, defining realistic transition paths,
+                  and ensuring that modernization efforts remain grounded in execution capacity.
+                  The goal is to introduce change in a way that is sustainable, controlled,
+                  and aligned with how the organization actually operates.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Representative Environments</p>
+                <p>
+                  This work has included enterprise modernization efforts, healthcare systems,
+                  and public sector settings where operational continuity and system reliability are critical.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK 04 -->
+      <section class="selected-work selected-work-alt">
+        <div class="section-container">
+          <div class="selected-work-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / CONTEXT BULLETS -->
+            <div class="selected-work-left">
+              <h2>Governance, Prioritization &amp; Operating Clarity</h2>
+
+              <p class="selected-descriptor">
+                Establishing the structures that keep decisions, priorities, and execution aligned.
+              </p>
+
+              <p class="selected-bullet-intro">Representative contexts:</p>
+
+              <ul class="selected-list">
+                <li>inconsistent decision-making across leaders or teams</li>
+                <li>priorities shifting without a clear basis</li>
+                <li>unclear ownership across cross-functional initiatives</li>
+                <li>growing complexity without sufficient operating discipline</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH / REPRESENTATIVE ENVIRONMENTS -->
+            <div class="selected-work-right">
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Context</p>
+                <p>
+                  In many organizations, challenges that appear technical are rooted in
+                  governance and operating structure. Decision-making may be inconsistent,
+                  priorities may shift without clear rationale, and teams may be asked to
+                  execute without shared context or defined ownership. As complexity increases,
+                  the absence of clear governance creates friction, slows execution, and reduces confidence in outcomes.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Approach</p>
+                <p>
+                  Work in these situations has focused on creating clarity in how decisions
+                  are made and how work is prioritized. This includes defining governance
+                  structures, establishing clearer decision rights, improving portfolio visibility,
+                  and creating a more consistent rhythm for reviewing progress and risk.
+                  The objective is to reduce ambiguity and create an operating environment
+                  where execution becomes more predictable, visible, and aligned.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Representative Environments</p>
+                <p>
+                  This work has included large-scale enterprise settings, cross-functional organizations,
+                  and public sector systems where coordination across multiple stakeholders is required.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK 05 -->
+      <section class="selected-work">
+        <div class="section-container">
+          <div class="selected-work-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / CONTEXT BULLETS -->
+            <div class="selected-work-left">
+              <h2>Strategic Alignment &amp; Direction</h2>
+
+              <p class="selected-descriptor">
+                Ensuring technology effort remains connected to organizational priorities and intent.
+              </p>
+
+              <p class="selected-bullet-intro">Representative contexts:</p>
+
+              <ul class="selected-list">
+                <li>initiatives expanding without a clear strategic through-line</li>
+                <li>urgent demands crowding out longer-term priorities</li>
+                <li>leadership questioning whether effort is tied to mission</li>
+                <li>organizations needing a clearer basis for investment decisions</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH / REPRESENTATIVE ENVIRONMENTS -->
+            <div class="selected-work-right">
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Context</p>
+                <p>
+                  Over time, technology organizations can become active without remaining aligned.
+                  Initiatives expand, priorities compete, and teams respond to immediate demands,
+                  but the broader direction becomes less clear. Leadership may begin to question
+                  whether effort is translating into meaningful organizational impact.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Approach</p>
+                <p>
+                  Work in these situations has focused on reconnecting execution with strategy.
+                  This includes clarifying priorities, aligning initiatives to organizational goals,
+                  identifying where effort has drifted, and supporting leadership with clearer decision frameworks.
+                  The aim is to ensure that technology effort remains purposeful, directed,
+                  and visibly connected to broader organizational objectives.
+                </p>
+              </div>
+
+              <div class="selected-copy-block">
+                <p class="selected-copy-label">Representative Environments</p>
+                <p>
+                  This work has included enterprise organizations, consulting environments,
+                  and public sector initiatives where alignment across leadership, execution,
+                  and institutional priorities is essential.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CROSS-ENVIRONMENT THEMES -->
+      <section class="selected-themes">
+        <div class="section-container">
+          <h2>What These Environments Tend to Share</h2>
+
+          <p class="section-intro selected-themes-intro">
+            Although the sectors and operating contexts differ, the same underlying patterns
+            tend to emerge when leadership, structure, and execution fall out of alignment.
+            These patterns have been addressed across work in government, healthcare,
+            transportation, consulting, and enterprise settings, including the Illinois
+            Department of Commerce &amp; Economic Opportunity, CVS Health, Kraft Foods,
+            Walgreens, the City of Chicago, Raytheon, Abbott Laboratories, and United Airlines.
+          </p>
+
+          <div class="selected-themes-grid">
+            <article class="theme-card">
+              <h3>Change Must Be Absorbed, Not Just Announced</h3>
+              <p>
+                Modernization and restructuring succeed only when the organization can absorb
+                change without losing continuity of service, ownership, or confidence.
+              </p>
+            </article>
+
+            <article class="theme-card">
+              <h3>Leadership Gaps Quickly Become Execution Gaps</h3>
+              <p>
+                When authority, direction, or decision cadence weakens, drift often appears
+                first in priorities, coordination, and delivery reliability.
+              </p>
+            </article>
+
+            <article class="theme-card">
+              <h3>Governance Problems Often Masquerade as Technical Problems</h3>
+              <p>
+                Many delivery and modernization issues are rooted less in tools than in
+                unclear decision rights, inconsistent prioritization, and weak operating structure.
+              </p>
+            </article>
+
+            <article class="theme-card">
+              <h3>Visibility Shapes the Quality of Decisions</h3>
+              <p>
+                Leadership can only govern well when progress, risk, dependencies, and tradeoffs
+                are visible in a way that supports timely and grounded decisions.
+              </p>
+            </article>
+
+            <article class="theme-card">
+              <h3>Cross-Functional Alignment Is Usually the Real Work</h3>
+              <p>
+                Technology execution depends on sustained coordination across leadership,
+                operations, stakeholders, and delivery teams, especially in complex environments.
+              </p>
+            </article>
+
+            <article class="theme-card">
+              <h3>Stability Creates the Conditions for Progress</h3>
+              <p>
+                Before meaningful transformation can take hold, organizations often need
+                clearer structure, stronger trust, and a more reliable basis for execution.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK CTA -->
+      <section class="selected-cta">
+        <div class="section-container">
+          <div class="selected-cta-inner">
+            <h2>Start a Conversation</h2>
+            <p>
+              If your organization is navigating one of these kinds of challenges and an
+              experienced external perspective would be useful, feel free to get in touch.
+            </p>
+            <a class="button-primary" href="/contact">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SITE FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <img src="/logo.png" alt="Leapintel Solutions" class="footer-logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/engagement">Engagement Models</a>
+            <a href="/focus-areas">Focus Areas</a>
+            <a href="/selected-work">Selected Work</a>
+            <a href="/contact">Contact</a>
+          </div>
+
+          <div class="footer-contact">
+            <p>Contact</p>
+            <a href="mailto:info@leapintel.com">info@leapintel.com</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2019–2026 Leapintel Solutions. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
 
     <script>
