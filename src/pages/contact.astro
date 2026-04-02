@@ -167,7 +167,7 @@
          CONTACT PAGE HEADER
          ================================= */
       .contact-header {
-        padding: 80px 0;
+        padding: 80px 0 100px;
         background: linear-gradient(180deg, #eef2f7 0%, #f7f9fc 100%);
         border-bottom: 1px solid rgba(23, 33, 50, 0.06);
       }
@@ -207,13 +207,10 @@
       /* =================================
          CONTACT DETAILS
          ================================= */
-      .contact-main {
-        padding: 90px 0 100px;
-        background: #ffffff;
-      }
-
+      
       .contact-card {
         max-width: 760px;
+        margin-top: 42px;
         padding: 36px 32px;
         background: #fbfbfc;
         border: 1px solid rgba(23, 33, 50, 0.06);
@@ -340,7 +337,7 @@
         }
 
         .contact-header {
-          padding: 140px 0 70px;
+          padding: 140px 0 86px;
         }
 
         .contact-title {
@@ -399,7 +396,7 @@
         }
  
         .contact-header {
-          padding: 72px 0 56px;
+          padding: 72px 0 72px;
         }
 
         .contact-title {
@@ -414,11 +411,9 @@
           line-height: 1.65;
         }
 
-        .contact-main {
-          padding: 72px 0 76px;
-        }
-
+        
         .contact-card {
+          margin-top: 32px;
           padding: 28px 20px;
         }
 
@@ -441,18 +436,7 @@
     </style>
   </head>
 
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('is-open');
-        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-    }
-  </script>
-
+  
   <body>
     <!-- SITE HEADER -->
     <header class="site-header">
@@ -495,32 +479,27 @@
               or complex technology decisions, Leapintel Solutions provides
               focused executive perspective and practical guidance.
             </p>
+
+            <div class="contact-card">
+              <p class="contact-label">Email</p>
+
+              <p class="contact-copy">
+                For inquiries regarding interim CIO leadership, fractional executive
+                support, or strategic advisory engagements:
+              </p>
+
+              <a class="contact-email" href="mailto:info@leapintel.com">
+                info@leapintel.com
+              </a>
+
+              <p class="contact-note">
+                Initial conversations are welcomed by email and will be handled directly.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      <!-- CONTACT DETAILS -->
-      <section class="contact-main">
-        <div class="section-container">
-          <div class="contact-card">
-            <p class="contact-label">Email</p>
-
-            <p class="contact-copy">
-              For inquiries regarding interim CIO leadership, fractional executive
-              support, or strategic advisory engagements:
-            </p>
-
-            <a class="contact-email" href="mailto:info@leapintel.com">
-              info@leapintel.com
-            </a>
-
-            <p class="contact-note">
-              Initial conversations are welcomed by email and will be handled directly.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      
       <!-- SITE FOOTER -->
       <footer class="site-footer">
         <div class="footer-container">
@@ -547,5 +526,17 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
   </body>
 </html>
