@@ -1,0 +1,1126 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- META / SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Areas | Leapintel Solutions</title>
+    <meta
+      name="description"
+      content="The types of organizational technology challenges where experienced executive leadership can help restore clarity, stability, and direction."
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <meta property="og:title" content="Focus Areas | Leapintel Solutions" />
+    <meta
+      property="og:description"
+      content="The kinds of organizational problems where experienced technology leadership is most often needed."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leapintel.com/focus-areas" />
+    <meta property="og:image" content="https://leapintel.com/chicago-skyline.jpg" />
+
+    <style>
+      /* =================================
+         ROOT VARIABLES
+         ================================= */
+      :root {
+        --navy: #142033;
+        --white: #ffffff;
+        --max-width: 1200px;
+      }
+
+      /* =================================
+         BASE / RESET
+         ================================= */
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #1f2937;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      /* =================================
+         SHARED SECTION STYLES
+         ================================= */
+      .section-container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      h2 {
+        margin: 0 0 22px;
+        color: #172132;
+        font-size: clamp(2rem, 3vw, 2.6rem);
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+
+      .section-intro {
+        max-width: 54ch;
+        margin-bottom: 44px;
+        color: #4b5563;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      /* =================================
+         HEADER / NAVIGATION
+         ================================= */
+      .site-header {
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        background: #dbe3ec;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.08);
+      }
+
+      .nav-shell {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 22px 24px;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        position: relative;
+      }
+
+      .brand {
+        white-space: nowrap;
+        color: #172132;
+        font-size: 1.18rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        color: #4b5563;
+        font-size: 0.92rem;
+        font-weight: 500;
+      }
+
+      .nav-links a {
+        transition: color 0.2s ease, opacity 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #172132;
+        opacity: 1;
+      }
+
+      .nav-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .nav-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: #172132;
+        border-radius: 999px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      /* =================================
+         BUTTONS
+         ================================= */
+      .button-primary,
+      .button-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        padding: 0 20px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+        box-sizing: border-box;
+        appearance: none;
+        -webkit-appearance: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease,
+          color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .button-primary {
+        color: #172132;
+        background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.95);
+        box-shadow: none;
+      }
+
+      .button-primary:hover {
+        transform: translateY(-1px);
+        background: #faf6f6;
+      }
+
+      .button-secondary {
+        color: rgba(255, 255, 255, 0.98);
+        background: rgba(10, 20, 35, 0.34);
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        box-shadow: none;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .button-secondary:hover {
+        background: rgba(10, 20, 35, 0.44);
+        border-color: rgba(255, 255, 255, 0.42);
+      }
+
+      /* =================================
+         FOCUS AREAS PAGE HEADER
+         ================================= */
+      .focus-header {
+        padding: 80px 0;
+        background: linear-gradient(180deg, #eef2f7 0%, #f7f9fc 100%);
+        border-bottom: 1px solid rgba(23, 33, 50, 0.06);
+      }
+
+      .focus-header-inner {
+        max-width: 940px;
+      }
+
+      .focus-eyebrow {
+        margin: 0 0 14px;
+        color: #5b6777;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .focus-title {
+        margin: 0 0 22px;
+        color: #172132;
+        font-size: clamp(2.4rem, 4vw, 3.8rem);
+        font-weight: 500;
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        max-width: 19ch;
+        transform: translateX(-2px);
+      }
+
+      .focus-lead {
+        max-width: 60ch;
+        margin: 0;
+        color: #4b5563;
+        font-size: 1.18rem;
+        line-height: 1.72;
+      }
+
+      .focus-hero-support {
+        max-width: 62ch;
+        margin: 28px 0 0;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      /* =================================
+         FOCUS AREA SECTIONS
+         ================================= */
+      .focus-area {
+        padding: 90px 0 95px;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+      }
+
+      .focus-area-alt {
+        background: #f6f8fb;
+      }
+
+      .focus-area-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.28fr);
+        gap: 40px 64px;
+        align-items: start;
+      }
+
+      /* LEFT COLUMN */
+      .focus-area-left h2 {
+        margin-bottom: 16px;
+        max-width: 20ch;
+      }
+
+      .focus-descriptor {
+        margin: 0 0 22px;
+        color: #5b6777;
+        font-size: 0.95rem;
+        font-weight: 600;
+        line-height: 1.65;
+        letter-spacing: 0.01em;
+        
+      }
+
+      .focus-bullet-intro {
+        margin: 0 0 16px;
+        color: #172132;
+        font-size: 0.92rem;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+      }
+
+      .focus-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .focus-list li {
+        position: relative;
+        margin: 0 0 12px;
+        padding-left: 18px;
+        color: #4b5563;
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+
+      .focus-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      .focus-list li::before {
+        content: "";
+        position: absolute;
+        top: 0.72em;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: rgba(23, 33, 50, 0.34);
+        transform: translateY(-50%);
+      }
+
+      /* RIGHT COLUMN */
+      .focus-area-right {
+        max-width: 62ch;
+        padding-top: 98px;
+      }
+
+      .focus-copy-block {
+        margin-bottom: 28px;
+      }
+
+      .focus-copy-block:last-child {
+        margin-bottom: 0;
+      }
+
+      .focus-copy-label {
+        margin: 0 0 10px;
+        color: #172132;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .focus-copy-block p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      /* =================================
+         COMMON PATTERNS SECTION
+         ================================= */
+      .focus-patterns {
+        padding: 95px 0 100px;
+        background: #ffffff;
+        border: 1px solid rgba(23, 33, 50, 0.07);
+      }
+
+      .focus-patterns-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+
+      .pattern-card {
+        padding: 28px 24px;
+        background: #f6f8fb;
+        border-bottom: 1px solid rgba(23, 33, 50, 0.05);
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(23, 33, 50, 0.035);
+      }
+
+      .pattern-card h3 {
+        margin: 0 0 12px;
+        color: #172132;
+        font-size: 1.04rem;
+        font-weight: 600;
+      }
+
+      .pattern-card p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 0.96rem;
+        line-height: 1.72;
+      }
+
+      /* =================================
+         FOCUS CTA
+         ================================= */
+      .focus-cta {
+        padding: 100px 0 110px;
+        background: var(--navy);
+        text-align: center;
+      }
+
+      .focus-cta-inner {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .focus-cta h2 {
+        margin: 0 0 20px;
+        color: #ffffff;
+      }
+
+      .focus-cta p {
+        max-width: 56ch;
+        margin: 0 auto 36px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      /* =================================
+         FOOTER
+         ================================= */
+      .site-footer {
+        padding: 60px 24px 30px;
+        color: #1f2937;
+        background: #ffffff;
+        border-top: 1px solid rgba(23, 33, 50, 0.08);
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        align-items: flex-start;
+        gap: 28px;
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      .footer-logo {
+        width: 130px;
+        margin-bottom: 12px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .footer-links a {
+        color: #374151;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .footer-links a:hover {
+        color: #111827;
+      }
+
+      .footer-contact p {
+        margin: 0 0 8px;
+        color: #6b7280;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .footer-contact a {
+        color: #374151;
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom {
+        margin-top: 40px;
+        color: #6b7280;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      /* =================================
+         RESPONSIVE BREAKPOINTS
+         ================================= */
+      @media (max-width: 900px) {
+        .nav-links {
+          gap: 18px;
+          font-size: 0.9rem;
+        }
+
+        .footer-container {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .focus-area-grid,
+        .focus-patterns-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .focus-header {
+          padding: 140px 0 70px;
+        }
+
+        .focus-title {
+          max-width: 16ch;
+        }
+        .focus-area-right {
+          padding-top: 0;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .nav-shell {
+          padding: 18px;
+        }
+
+        .nav-bar {
+          gap: 16px;
+        }
+
+        .brand {
+          font-size: 1.05rem;
+        }
+
+        .nav-toggle {
+          display: inline-flex;
+        }
+
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: calc(100% + 12px);
+          left: 0;
+          right: 0;
+          z-index: 30;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0;
+          padding: 10px 0;
+          background: rgba(255, 255, 255, 0.98);
+          border: 1px solid rgba(23, 33, 50, 0.08);
+          border-radius: 14px;
+          box-shadow: 0 12px 30px rgba(23, 33, 50, 0.08);
+        }
+
+        .nav-links.is-open {
+          display: flex;
+        }
+
+        .nav-links a {
+          width: 100%;
+          padding: 12px 16px;
+          font-size: 0.92rem;
+          line-height: 1.3;
+        }
+
+        .nav-links a:hover {
+          background: rgba(219, 227, 236, 0.45);
+        }
+
+        .button-primary,
+        .button-secondary {
+          width: 100%;
+          min-height: 46px;
+          font-size: 0.9rem;
+        }
+
+        .focus-header {
+          padding: 72px 0 56px;
+        }
+
+        .focus-title {
+          margin: 0 0 18px;
+          font-size: clamp(2.2rem, 8vw, 3.2rem);
+          line-height: 1.05;
+          max-width: 100%;
+        }
+
+        .focus-lead {
+          font-size: 1.05rem;
+          line-height: 1.65;
+        }
+
+        .focus-area,
+        .focus-patterns,
+        .focus-cta {
+          padding-top: 72px;
+          padding-bottom: 76px;
+        }
+
+        .pattern-card {
+          padding: 24px 20px;
+        }
+
+        .focus-copy-block {
+          margin-bottom: 24px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .brand {
+          font-size: 1.02rem;
+        }
+
+        .focus-header-inner {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="nav-shell">
+        <div class="nav-bar">
+          <a class="brand" href="/">Leapintel Solutions</a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="Open navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-links" id="primary-navigation" aria-label="Primary">
+            <a href="/about">About</a>
+            <a href="/engagement">Engagement Models</a>
+            <a href="/focus-areas">Focus Areas</a>
+            <a href="/selected-work">Selected Work</a>
+            <a href="/contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- FOCUS AREAS PAGE HEADER -->
+      <section class="focus-header">
+        <div class="section-container">
+          <div class="focus-header-inner">
+            <p class="focus-eyebrow">Focus Areas</p>
+
+            <h1 class="focus-title">
+              The kinds of organizational problems where experienced technology
+              leadership is most often needed.
+            </h1>
+
+            <p class="focus-lead">
+              Technology challenges rarely begin as technical issues alone. More often,
+              they emerge through leadership gaps, competing priorities, unclear ownership,
+              stalled execution, or modernization efforts that have outpaced the
+              organization’s ability to absorb change.
+            </p>
+
+            <p class="focus-hero-support">
+              The focus areas below reflect the kinds of situations where experienced
+              executive leadership can help restore clarity, stabilize direction, and
+              move work forward in a way that is practical, measured, and aligned with
+              broader organizational goals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA 01 -->
+      <section class="focus-area">
+        <div class="section-container">
+          <div class="focus-area-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / BULLETS -->
+            <div class="focus-area-left">
+              <h2>Leadership Continuity &amp; Transition</h2>
+
+              <p class="focus-descriptor">
+                Executive technology leadership during moments when continuity,
+                direction, and decision-making cannot be left to drift.
+              </p>
+
+              <p class="focus-bullet-intro">These situations often present as:</p>
+
+              <ul class="focus-list">
+                <li>a CIO or senior technology leader has departed or is preparing to depart</li>
+                <li>critical decisions are being delayed due to unclear authority</li>
+                <li>teams continue to operate, but without strong directional alignment</li>
+                <li>leadership transition is underway, but continuity has not been fully established</li>
+                <li>the organization needs stability before a permanent appointment is made</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH -->
+            <div class="focus-area-right">
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Context</p>
+                <p>
+                  Leadership transitions can quickly create uncertainty across teams,
+                  initiatives, and stakeholders. Even where operations remain intact,
+                  decision-making may slow, priorities may become less clear, and
+                  accountability can begin to diffuse. The issue is not only the
+                  vacancy itself, but the organizational drift that often follows
+                  when leadership continuity is interrupted.
+                </p>
+              </div>
+
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Approach</p>
+                <p>
+                  This focus area centers on preserving direction during periods of
+                  change. That may involve stepping into a leadership gap, supporting
+                  transition planning, re-establishing decision clarity, and creating
+                  the structure needed to maintain momentum while the organization
+                  prepares for its next phase of leadership.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA 02 -->
+      <section class="focus-area focus-area-alt">
+        <div class="section-container">
+          <div class="focus-area-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / BULLETS -->
+            <div class="focus-area-left">
+              <h2>Stabilization &amp; Execution Recovery</h2>
+
+              <p class="focus-descriptor">
+                Restoring execution clarity where delivery has slowed or fragmented.
+              </p>
+
+              <p class="focus-bullet-intro">These situations often present as:</p>
+
+              <ul class="focus-list">
+                <li>important initiatives have stalled or lost momentum</li>
+                <li>too many efforts are moving at once without clear prioritization</li>
+                <li>ownership and accountability are no longer well defined</li>
+                <li>delivery problems are recurring without being structurally addressed</li>
+                <li>leaders lack confidence in the reliability of execution reporting</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH -->
+            <div class="focus-area-right">
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Context</p>
+                <p>
+                  Some organizations do not face a lack of effort. They face a loss of
+                  execution coherence. Priorities compete, initiatives stall, teams work
+                  hard without clear integration, and leadership receives mixed signals
+                  about progress, risk, and ownership. Over time, this creates frustration
+                  and weakens confidence in delivery.
+                </p>
+              </div>
+
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Approach</p>
+                <p>
+                  This focus area is concerned with regaining control of execution.
+                  That includes clarifying priorities, identifying where work is stuck,
+                  re-establishing accountability, reducing operational noise, and
+                  creating a more disciplined path forward. The objective is not simply
+                  to push activity, but to restore dependable movement and visible progress.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA 03 -->
+      <section class="focus-area">
+        <div class="section-container">
+          <div class="focus-area-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / BULLETS -->
+            <div class="focus-area-left">
+              <h2>Modernization Without Disruption</h2>
+
+              <p class="focus-descriptor">
+                Advancing modernization in a way that strengthens the organization
+                without destabilizing the work that must continue every day.
+              </p>
+
+              <p class="focus-bullet-intro">These situations often present as:</p>
+
+              <ul class="focus-list">
+                <li>legacy systems are creating risk, delay, or operational drag</li>
+                <li>modernization has become necessary, but internal capacity is limited</li>
+                <li>transformation efforts threaten to outpace organizational readiness</li>
+                <li>leaders need to balance improvement with continuity of service</li>
+                <li>technology change must proceed without disrupting core operations</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH -->
+            <div class="focus-area-right">
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Context</p>
+                <p>
+                  Modernization is often treated as a technical program, but in practice
+                  it is an organizational balancing act. Legacy systems may need to be
+                  replaced, integrated, or restructured, yet day-to-day operations still
+                  have to function. When modernization is pursued without sufficient
+                  operational awareness, it can create new risks even while attempting
+                  to solve old ones.
+                </p>
+              </div>
+
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Approach</p>
+                <p>
+                  This focus area is about moving modernization forward with discipline
+                  and realism. It includes helping organizations sequence change
+                  appropriately, protect operational continuity, align stakeholders
+                  around practical tradeoffs, and avoid transformation efforts that are
+                  too broad, too abrupt, or disconnected from execution capacity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA 04 -->
+      <section class="focus-area focus-area-alt">
+        <div class="section-container">
+          <div class="focus-area-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / BULLETS -->
+            <div class="focus-area-left">
+              <h2>Governance, Prioritization &amp; Operating Clarity</h2>
+
+              <p class="focus-descriptor">
+                Creating the structures that help decisions, priorities, and
+                responsibilities remain clear across the organization.
+              </p>
+
+              <p class="focus-bullet-intro">These situations often present as:</p>
+
+              <ul class="focus-list">
+                <li>decision-making is inconsistent or overly dependent on informal channels</li>
+                <li>the organization lacks a clear way to prioritize competing work</li>
+                <li>teams are working across functions without a shared operating structure</li>
+                <li>escalation paths are weak, delayed, or unclear</li>
+                <li>portfolio decisions are being made without sufficient visibility or discipline</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH -->
+            <div class="focus-area-right">
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Context</p>
+                <p>
+                  In many environments, problems that appear technical are actually
+                  governance problems. Work moves forward without a shared decision
+                  structure. Priorities are revised informally. Escalations happen
+                  too late. Teams are asked to execute without clear authority,
+                  sequencing, or operating expectations. The result is confusion,
+                  inconsistency, and preventable friction.
+                </p>
+              </div>
+
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Approach</p>
+                <p>
+                  This focus area addresses the operating discipline behind effective
+                  delivery. It may involve clarifying governance forums, defining
+                  decision rights, improving prioritization methods, creating stronger
+                  portfolio visibility, and establishing a more consistent cadence for
+                  reviewing progress, risk, and tradeoffs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA 05 -->
+      <section class="focus-area">
+        <div class="section-container">
+          <div class="focus-area-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / BULLETS -->
+            <div class="focus-area-left">
+              <h2>Strategic Alignment &amp; Direction</h2>
+
+              <p class="focus-descriptor">
+                Ensuring technology effort remains connected to institutional
+                priorities, leadership intent, and practical organizational reality.
+              </p>
+
+              <p class="focus-bullet-intro">These situations often present as:</p>
+
+              <ul class="focus-list">
+                <li>technology initiatives no longer map clearly to organizational priorities</li>
+                <li>leadership senses drift but lacks a clear view of where it began</li>
+                <li>urgent demands are crowding out strategic work</li>
+                <li>investment decisions need stronger strategic grounding</li>
+                <li>teams need a clearer line of sight between execution and mission</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH -->
+            <div class="focus-area-right">
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Context</p>
+                <p>
+                  Technology organizations can become busy without remaining strategically
+                  aligned. Initiatives multiply, stakeholders advocate for urgent needs,
+                  and teams respond to immediate pressures, yet the larger direction becomes
+                  less coherent. Over time, effort fragments and leadership begins to question
+                  whether technology investment is truly supporting the organization’s core goals.
+                </p>
+              </div>
+
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Approach</p>
+                <p>
+                  This focus area is about restoring and maintaining alignment between
+                  technology work and organizational direction. That includes helping
+                  leadership clarify priorities, connecting initiatives to institutional
+                  goals, identifying where efforts have drifted, and creating a clearer
+                  basis for deciding what matters most and why.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREA 06 -->
+      <section class="focus-area focus-area-alt">
+        <div class="section-container">
+          <div class="focus-area-grid">
+            <!-- LEFT COLUMN: TITLE / DESCRIPTOR / BULLETS -->
+            <div class="focus-area-left">
+              <h2>Decision Visibility &amp; Insight</h2>
+
+              <p class="focus-descriptor">
+                Improving the quality of leadership decisions by making progress,
+                risk, performance, and tradeoffs more visible.
+              </p>
+
+              <p class="focus-bullet-intro">These situations often present as:</p>
+
+              <ul class="focus-list">
+                <li>reporting exists, but does not support timely decision-making</li>
+                <li>risks and dependencies are surfacing too late</li>
+                <li>leadership lacks confidence in the accuracy or usefulness of dashboards</li>
+                <li>critical tradeoffs are being made without adequate visibility</li>
+                <li>decision-makers need clearer insight across initiatives, operations, or performance</li>
+              </ul>
+            </div>
+
+            <!-- RIGHT COLUMN: CONTEXT / APPROACH -->
+            <div class="focus-area-right">
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Context</p>
+                <p>
+                  Leaders cannot govern effectively when they lack clear visibility
+                  into what is happening beneath the surface. Reports may exist, but
+                  they may be inconsistent, overly detailed, delayed, or disconnected
+                  from the decisions that need to be made. In those conditions,
+                  leadership often reacts late or relies too heavily on anecdotal signals.
+                </p>
+              </div>
+
+              <div class="focus-copy-block">
+                <p class="focus-copy-label">Approach</p>
+                <p>
+                  This focus area centers on strengthening decision support through
+                  better visibility and clearer insight. That may involve improving
+                  reporting structures, clarifying what leaders actually need to see,
+                  reducing noise in the information flow, and creating a more useful
+                  view of progress, risk, dependencies, and performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMON PATTERNS ACROSS THESE SITUATIONS -->
+      <section class="focus-patterns">
+        <div class="section-container">
+          <h2>What These Situations Often Have in Common</h2>
+
+          <p class="section-intro">
+            While the circumstances vary, these situations often share a common pattern:
+            direction becomes less clear, execution becomes harder to trust, and the
+            organization begins to feel the effects before the underlying causes have
+            been fully addressed.
+          </p>
+
+          <div class="focus-patterns-grid">
+            <article class="pattern-card">
+              <h3>Leadership Continuity Weakens</h3>
+              <p>
+                Direction, authority, and momentum begin to loosen when leadership
+                transitions are not fully absorbed by the organization.
+              </p>
+            </article>
+
+            <article class="pattern-card">
+              <h3>Priorities Begin to Compete</h3>
+              <p>
+                Work expands faster than the organization’s ability to sequence,
+                govern, and make meaningful tradeoffs.
+              </p>
+            </article>
+
+            <article class="pattern-card">
+              <h3>Execution Becomes Harder to Read</h3>
+              <p>
+                Progress may continue, but confidence in delivery declines as signals
+                become mixed and accountability becomes less visible.
+              </p>
+            </article>
+
+            <article class="pattern-card">
+              <h3>Governance Falls Behind Complexity</h3>
+              <p>
+                Existing decision structures and operating rhythms no longer provide
+                sufficient clarity for the work now underway.
+              </p>
+            </article>
+
+            <article class="pattern-card">
+              <h3>Modernization Pressure Increases Risk</h3>
+              <p>
+                Necessary change begins to strain operational continuity when sequencing,
+                readiness, or capacity are not clearly managed.
+              </p>
+            </article>
+
+            <article class="pattern-card">
+              <h3>Leadership Needs Clearer Visibility</h3>
+              <p>
+                Better decisions depend on clearer insight into progress, risk,
+                dependencies, and the practical implications of tradeoffs.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOCUS AREAS CTA -->
+      <section class="focus-cta">
+        <div class="section-container">
+          <div class="focus-cta-inner">
+            <h2>Start a Conversation</h2>
+            <p>
+              If your organization is dealing with one of these kinds of challenges
+              and an external executive perspective would be useful, feel free to get in touch.
+            </p>
+            <a class="button-primary" href="/contact">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SITE FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <img src="/logo.png" alt="Leapintel Solutions" class="footer-logo" />
+          </div>
+
+          <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/engagement">Engagement Models</a>
+            <a href="/focus-areas">Focus Areas</a>
+            <a href="/selected-work">Selected Work</a>
+            <a href="/contact">Contact</a>
+          </div>
+
+          <div class="footer-contact">
+            <p>Contact</p>
+            <a href="mailto:info@leapintel.com">info@leapintel.com</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2019–2026 Leapintel Solutions. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    </script>
+  </body>
+</html>
